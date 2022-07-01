@@ -1,9 +1,5 @@
 package sdfsubmission.task2;
 
-import java.io.DataInput;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -34,10 +30,7 @@ public class App
                 dos = new ObjectOutputStream(os);
                 is = sock.getInputStream();
                 dis = new ObjectInputStream(is);
-                //TODO create objectoutputstream/inputstream ???????
-                System.out.println("asdasd");
                 String inputfromServer = dis.readUTF();
-                System.out.println("asdasd");
                 System.out.println(inputfromServer);
                 String[] inputList = inputfromServer.split(" ");
                 String reqID = inputList[0];

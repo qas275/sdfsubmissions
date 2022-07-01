@@ -59,7 +59,7 @@ public class App
         }
         System.out.println(allInfo);
         String result = "";
-        for (int i=1;i<(allInfo.size()-1);i++){
+        for (int i=1;i<(allInfo.size());i++){
             result = templateText;
             ArrayList<String> varNames = allInfo.get(0);
             for (int j=0; j<varNames.size();j++){
